@@ -3,6 +3,7 @@
     color: #fff;    
     text-decoration: none;
     padding: .75rem 1.2rem;
+    font-weight: 100;
     display: inline-block;
 
     &--orange {
@@ -10,7 +11,11 @@
     }
 
     &--large{
-        font-size: 1.25rem;
+        font-size: 1.15rem;
         padding: 1.1rem 1.9rem;
+        
+        @mixin atSmall {
+            font-size: 1.15rem;
+        }
     }
 }
